@@ -27,6 +27,21 @@ trace_seq_init(struct trace_seq *s)
 
 #define MAX_MEMHEX_BYTES	8
 
+/**
+ * trace_seq_buffer_ptr - return pointer to next location in buffer
+ * @s: trace sequence descriptor
+ *
+ * Returns the pointer to the buffer where the next write to
+ * the buffer will happen. This is useful to save the location
+ * that is about to be written to and then return the result
+ * of that write.
+ */
+static inline unsigned char *
+trace_seq_buffer_ptr(struct trace_seq *s)
+{
+	return s->buffer + s->len;
+}
+
 /*
  * Currently only defined when tracing is enabled.
  */

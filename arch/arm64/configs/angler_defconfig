@@ -2,6 +2,7 @@
 # StatiX kernel config
 # ----------------------------------------------------------------------------------
 CONFIG_LOCALVERSION="-Statix-Pie"
+# CONFIG_LOCALVERSION_AUTO is not set
 # add kcal support
 CONFIG_FB_MSM_MDSS_KCAL_CTRL=y
 # add high performance audio

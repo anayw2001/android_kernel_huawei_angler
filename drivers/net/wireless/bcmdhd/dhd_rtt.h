@@ -67,7 +67,7 @@ enum rtt_status {
 };
 typedef int64_t wifi_timestamp; /* In microseconds (us) */
 typedef int64_t wifi_timespan;
-typedef int32 wifi_rssi;
+/*typedef int32 wifi_rssi; */
 
 typedef enum {
 	RTT_INVALID,

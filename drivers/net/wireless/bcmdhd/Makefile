@@ -12,6 +12,10 @@ DHDCFLAGS += -Wall -Wstrict-prototypes -Dlinux -DLINUX -DBCMDRIVER            \
 	-DDHD_DONOT_FORWARD_BCMEVENT_AS_NETWORK_PKT                           \
 	-DCUSTOMER_HW2 -DGET_CUSTOM_MAC_ENABLE
 
+ifeq ($(cc-name), clang)
+    DHDCFLAGS += -Wno-sometimes-uninitialized
+endif
+
 #################
 # Common feature
 #################

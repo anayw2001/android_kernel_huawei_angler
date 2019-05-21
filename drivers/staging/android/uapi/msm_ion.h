@@ -5,8 +5,7 @@
 
 enum msm_ion_heap_types {
 	ION_HEAP_TYPE_MSM_START = ION_HEAP_TYPE_CUSTOM + 1,
-	ION_HEAP_TYPE_SECURE_DMA = ION_HEAP_TYPE_MSM_START,
-	ION_HEAP_TYPE_REMOVED,
+    ION_HEAP_TYPE_SECURE_DMA = ION_HEAP_TYPE_MSM_START,
 	/*
 	 * if you add a heap type here you should also add it to
 	 * heap_types_info[] in msm_ion.c
